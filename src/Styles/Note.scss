@@ -1,0 +1,42 @@
+@import 'variables', 'Form';
+
+.note{
+    min-width: 20%;
+    border: 1px solid #e0e0e0;
+    border-radius: .3em;
+    padding: 10px;
+    margin: 50px;
+    position: relative;
+
+    &:hover{
+        box-shadow: 2px 2px 25px -9px rgba(33,34,1,0.86);
+        @include transition-ease
+    }
+
+    &-title, &-text{
+        margin: 0 0 10px 0;
+        word-break: break-all;
+    }
+}
+
+.option-bar{
+    @extend .note-options;
+    display: flex;
+}
+
+.fonts{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid $secundary-color;
+}
+
+.fa-bold, .fa-italic, .fa-underline, .fa-trash-alt{
+    @extend .fa-images;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.fa-trash-alt:hover{
+    color: #a00101;
+}

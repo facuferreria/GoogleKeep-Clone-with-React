@@ -1,0 +1,8 @@
+
+$primary-color: #fff;
+$secundary-color: #A6ACAF;
+$nav-color: #212121;
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
